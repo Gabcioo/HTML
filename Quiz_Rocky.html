@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+<form action="mailto:gabriel.hejduk@tm1.edu.pl">
+ <!--method=post - prześle formularz w postaci zakodowanej-->
+ <!--method=get - prześle formularz bez kodowania-->
+
+    <h1>Wypełnij formularz:</h1>
+
+        <label for="imie">Imię:</label>     <!--for=ID-->
+        <input type="text" name="imie" id="imie" maxlength="15" size="6"><br><br>
+
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" name="nazwisko" id="nazwisko" maxlength="30" size="29"><br><br>
+
+        <label for="wiek">Ile masz lat?</label>     <!--for=ID-->
+        <input type="number" name="wiek" id="wiek" min="6" max="15"><br><br>
+
+        <label for="haslo">Hasło:</label>     <!--for=ID-->
+        <input type="password" name="haslo" id="haslo">
+
+
+<hr>
+<h3>Gdzie urodził się Sylvester Stallone?</h3>
+
+        <input type="radio" id="Nowy Jork" name="miejsce" value="Nowy Jork">   <!--for=ID=value-->
+        <label for="Nowy Jork">Nowy Jork</label><br><br>
+
+        <input type="radio" id="Chicago" name="miejsce" value="Chicago">   <!--for=ID=value-->
+        <label for="Chicago">Chicago</label><br><br>
+
+        <input type="radio" id="Miami" name="miejsce" value="Miami">   <!--for=ID=value-->
+        <label for="Miami">Miami</label><br><br>
+
+<hr>
+<h3>Ile lat ma Sylvester Stallone?</h3>
+
+        <input type="radio" id="67" name="wiek" value="67">   <!--for=ID=value-->
+        <label for="67">67</label><br><br>
+
+        <input type="radio" id="63" name="wiek" value="63">   <!--for=ID=value-->
+        <label for="63">63</label><br><br>
+
+        <input type="radio" id="77" name="wiek" value="77">   <!--for=ID=value-->
+        <label for="77">77</label><br><br>
+
+    <!--druga lista jednokrotnego wyboru=nalezy zmienić pole "name"-->
+    <!--name=wpólna nazwa dla jednej listy-->
+
+<hr>
+<h3>Jakie są zainteresowania Sylvestra Stallone?</h3>
+
+        <input type="checkbox" id="boks" name="hobby" value="boks">   <!--for=ID=value-->
+        <label for="boks">boks</label>
+
+        <input type="checkbox" id="bieganie" name="hobby" value="bieganie">   <!--for=ID=value-->
+        <label for="bieganie">bieganie</label>
+
+        <input type="checkbox" id="Gotowanie" name="hobby" value="Gotowanie">   <!--for=ID=value-->
+        <label for="Gotowanie">Gotowanie</label>
+
+<hr>
+<h3>Jakim autem jeździ Sylvester Stallone?</h3>
+
+        <input type="checkbox" id="BMW" name="auto" value="BMW">   <!--for=ID=value-->
+        <label for="BMW">BMW</label>
+
+        <input type="checkbox" id="Corvette" name="auto" value="Corvette">   <!--for=ID=value-->
+        <label for="Corvette">Corvette</label>
+
+        <input type="checkbox" id="Nissan" name="auto" value="Nissan">   <!--for=ID=value-->
+        <label for="Nissan">Nissan</label>
+
+<hr>
+<h3>Czy Sylvester Stallone w roli Rockiego wygrał walkę z Ivanem Drago?</h3>
+
+        <select name="przeglądarka" id="przeglądarka">
+            <option value="tak">Tak</option>
+            <option value="nie">Nie</option>
+        </select>
+
+<!--zmiana zaznaczonej opcji na selected-->
+
+<hr>
+<h3>Z kim Sylvester Stallone w roli Rockiego stoczył pierwszą profesjonalną walkę mistrzostwo świata?</h3>
+        <select name="przeglądarka" id="przeglądarka" multiple size="5">
+            <option value="ivan drago">Ivan Drago</option>
+            <option value="apollo creed">Apollo Creed</option>
+            <option value="zygzak mcqueen">Zygzak Mcqueen</option>
+        </select>
+
+<!--z CTRL mozna zaznaczyć więcej opcji-->
+
+<hr>
+
+        <label for="uwagi">Ciekawostka:</label><br>
+            <textarea name="uwagi" id="uwagi" cols="15" rows="5" maxlength="50">Napisz ciekawostke o Sylvestrze Stallone</textarea>
+
+<hr>
+
+        <button type="button" onclick="alert('dzień dobry!')">Naciśnij!</button>
+
+        <input type="reset" value="Wyzeruj">
+
+        <input type="submit">
+</body>
+</html>
